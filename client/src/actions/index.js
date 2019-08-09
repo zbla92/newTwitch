@@ -25,10 +25,12 @@ export const signOut = () => {
     }
 }
 
-//Action to create new stream and post to json server
-export const createStream = formValues => async dispatch => {
+//Action to create new stream and post to json server  // 
+//GetState is used to get userID and store it in every stream that gets created
+export const createStream = formValues => async (dispatch, getState) => {
     //console.log(formValues)
-    const response = await streams.post('./streams', formValues);
+    const {userId} = getState().auth;
+    const response = await streams.post('./streams', {...formValues, userId});
     
     dispatch({type: CREATE_STREAM, payload: response.data})
 };
@@ -57,3 +59,4 @@ export const editStream = (id, formValues) => async dispatch => {
 
     dispatch({ type: EDIT_STREAM, payload: response.data })
 }   
+

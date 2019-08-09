@@ -4,6 +4,9 @@ import {connect} from 'react-redux';
 import {createStream} from '../../actions'
 
 class StreamCreate extends React.Component{
+    componentDidMount(){
+        console.log(this.props.state)
+    }
 
     // Destructured meta to meta.error and meta.touched
     renderError({error, touched}){
@@ -68,4 +71,9 @@ const formWrapped =  reduxForm({
     validate: validate
 })(StreamCreate);
 
-export default connect(null, { createStream })(formWrapped);
+
+const mapStateToProps = state => {
+    console.log(state)
+    return {isSignedIn: state.auth.isSignedIn}
+}
+export default connect(mapStateToProps, { createStream })(formWrapped);
