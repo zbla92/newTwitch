@@ -1,0 +1,54 @@
+{
+  "streams": [
+    {
+      "title": "f",
+      "description": "sdf",
+      "id": 1
+    },
+    {
+      "title": "f",
+      "description": "sdf",
+      "id": 2
+    },
+    {
+      "title": "f",
+      "description": "sdf",
+      "id": 3
+    },
+    {
+      "title": "sda",
+      "description": "das",
+      "id": 4
+    },
+    {
+      "title": "sdadsa",
+      "description": "dasda",
+      "id": 5
+    },
+    {
+      "title": "sdadsa",
+      "description": "dasdadsa",
+      "id": 6
+    },
+    {
+      "title": "damn brou",
+      "description": "good this shit is ",
+      "id": 7
+    },
+    {
+      "title": "damn brou",
+      "description": "good this shit is ",
+      "id": 8
+    },
+    {
+      "title": "damn brou",
+      "description": "good this shit is ",
+      "id": 9
+    },
+    {
+      "title": "shit is good ",
+      "description": "wow its a good stream man",
+      "id": 10
+    }
+  ]
+}
